@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PgBouncerSample.IntegrationTests</name>
+    </assembly>
+    <members>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetNotSelectableTypes">
+            <summary>
+            Получить классы объектов данных,
+            которые не требуется вычитывать из БД.
+            </summary>
+            <returns>Список классов, которые не требуется вычитывать из БД.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetStoredDataObjects">
+            <summary>
+            Получить хранимые объекты данных из сборки объектов данных.
+            </summary>
+            <returns>Список классов хранимых объектов данных из сборки объектов данных.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.CheckAllStoredClassesAreSelectable">
+            <summary>
+                Проверить, что все хранимые классы могут читаться по всем представлениям.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.CheckAllEnumIntegration">
+            <summary>
+                Проверить, что все хранимые классы имеют корректную интеграцию по полям Enum.
+            </summary>
+        </member>
+    </members>
+</doc>

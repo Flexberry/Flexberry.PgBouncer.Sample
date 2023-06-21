@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PgBouncerSample.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.PgBouncerSample.DataObjectFacts">
+            <summary>
+            Класс с тестами для проверки корректности объектной модели.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.DataObjectFacts.CheckAccessTypeThis">
+            <summary>
+            Проверять ли, что во всех объектах данных AcessType=@this.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.DataObjectFacts.CheckAudit">
+            <summary>
+            Проверять ли, что во всех объектах настроен аудит.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.DataObjectFacts.CheckSerializable">
+            <summary>
+            Проверять ли, что во всех объектах данных есть атрибут Serializable.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetDataServiceType">
+            <summary>
+            Получить используемый приложением тип сервиса данных.
+            </summary>
+            <returns>Тип сервиса данных.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetPropertiesWithoutDataServiceExpression">
+            <summary>
+            Получить имена свойств объектов данных,
+            для которых намеренно не задано DataServiceExpression.
+            </summary>
+            <returns>Словарь {Тип, массив имен свойств}, для которых не задано DataServiceExpression.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetPropertiesWithoutNotNull">
+            <summary>
+            Получить имена свойств объектов данных с ValueType-типом,
+            для которых намеренно не задан атрибут <see cref="T:ICSSoft.STORMNET.NotNullAttribute"/>.
+            </summary>
+            <returns>Словарь {Тип, массив имен свойств}, для которых намеренно не задан атрибут <see cref="T:ICSSoft.STORMNET.NotNullAttribute"/>.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetPropertiesWithoutGetterCheck">
+            <summary>
+            Получить имена свойств объектов данных,
+            у которых геттер намеренно генерирует исключение, если объект недозагружен.
+            </summary>
+            <returns>Словарь {Тип, массив имен свойств}, у которых геттер намеренно генерирует исключение, если объект недозагружен.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetPropertiesWithoutSetterCheck">
+            <summary>
+            Получить имена свойств объектов данных,
+            у которых сеттер намеренно генерирует исключение, если объект недозагружен.
+            </summary>
+            <returns>Словарь {Тип, массив имен свойств}, у которых сеттер намеренно генерирует исключение, если объект недозагружен.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetViewsWithoutAgregateProperty">
+            <summary>
+            Получить имена представлений объектов данных, являющихся детейлами,
+            в которых намеренно отсутствует свойство-агрегатор.
+            </summary>
+            <returns><see cref="!:Dictionary&lt;Type, string[]&gt;"/> с именами представлений объектов-детейлов,
+            в которых намеренно отсутсвует свойство-агрегатор.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetTypesWithInvalidViews">
+            <summary>
+            Получить классы объектов данных, 
+            в которых имеются намеренно некорректные представления.
+            </summary>
+            <returns>Список классов с намеренно некорректными представлениями.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetDataObjectsWithoutAccessType">
+            <summary>
+            Получить классы объектов данных,
+            в которых намеренно не задан AcessType=@this.
+            </summary>
+            <returns>Список классов, в которых намеренно не задан AcessType=@this.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetDataObjectsWithoutSerializable">
+            <summary>
+            Получить классы объектов данных,
+            в которых намеренно не задан Serializable.
+            </summary>
+            <returns>Список классов, в которых намеренно не задан Serializable.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetDataObjectsWithoutAudit">
+            <summary>
+            Получить классы объектов данных,
+            в которых намеренно не настроен аудит.
+            </summary>
+            <returns>Список классов, в которых намеренно не настроен аудит.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetDataObjectsWithoutAuditOperations">
+            <summary>
+            Получить классы объектов данных,
+            в которых намеренно не настроен аудит операций.
+            </summary>
+            <returns>Список классов, в которых намеренно не настроен аудит операций.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetStoredDataObjects">
+            <summary>
+            Получить хранимые объекты данных из сборки объектов данных.
+            </summary>
+            <returns>Список классов хранимых объектов данных из сборки объектов данных.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.GetStoredDataObjectsAndDetails">
+            <summary>
+            Получить хранимые объекты данных и массивы детейлов из сборки объектов данных.
+            </summary>
+            <returns>Список классов хранимых объектов данных и массивов детейлов из сборки объектов данных.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.AuditProperties">
+            <summary>
+            Получить свойства, определенные в интерфейсе <see cref="T:ICSSoft.STORMNET.Business.Audit.IDataObjectWithAuditFields" />.
+            </summary>
+            <returns>Перечень свойств.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.DataObjectInnerProperties">
+            <summary>
+            Получить свойства, определенные в интерфейсе <see cref="T:ICSSoft.STORMNET.DataObject" />.
+            </summary>
+            <returns>Перечень свойств.</returns>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAllNotStoredPropertiesHaveDataServiceExpression">
+            <summary>
+                Тест проверяет, что все нехранимые свойства имеют DSE.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAllValueTypeHasNotNullFlag">
+            <summary>
+                Тест проверяет, что все логические поля имеют атрибут NotNull.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAllGettersAreValid">
+            <summary>
+                Тест проверяет, что getter'ы всех свойств не вызывают исключений при пустом объекте.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAllSettersAreValid">
+            <summary>
+                Тест проверяет, что setter'ы всех свойств не вызывают исключений при пустом объекте.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAllBusinessServerNamesAreValid">
+            <summary>
+                Тест проверяет, что атрибут <see cref="T:ICSSoft.STORMNET.Business.BusinessServerAttribute" /> корректен.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAllDataObjectPropertyHasPropertyStorageAttribute">
+            <summary>
+                Тест проверяет, что у всех хранимых классов DataObject-свойства имеют <see cref="T:ICSSoft.STORMNET.PropertyStorageAttribute"/>.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestStaticViewsAreValid">
+            <summary>
+                Тест проверяет, что статические представления во вложенном классе Views валидны.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestDetailViews">
+            <summary>
+                Тест проверяет, что во всех представлениях детейлов присутствует свойство агрегатора.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestNotStoredPropertiesInViews">
+            <summary>
+                Тест проверяет, что для всех нехранимых свойств добавлены необходимые зависимые свойства.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAllDataObjectHasSerializableAttribute">
+            <summary>
+                Тест проверяет, что у всех классов присутствует атрибут <see cref="T:System.SerializableAttribute" />.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAllDataObjectsHasAccessTypeThis">
+            <summary>
+                Тест проверяет, что все объекты данных имеют <see cref="F:ICSSoft.STORMNET.AccessType.this" />.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestExistenceAuditSettings">
+            <summary>
+            Проверка наличия настроек аудита для всех классов и их полей.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAuditOperationsAreValid">
+            <summary>
+            Проверка наличия настроек аудита для всех классов и их полей.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestOwnPropertiesInAuditView">
+            <summary>
+            Проверка наличия собственных свойств в представлениях аудита.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DataObjectFacts.TestAllAuditViewsAreValid">
+            <summary>
+            Проверка валидности представления аудита.
+            </summary>
+        </member>
+    </members>
+</doc>

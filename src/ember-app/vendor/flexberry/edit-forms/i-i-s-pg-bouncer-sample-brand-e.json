@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Brand",
+  "name": "IISPgBouncerSampleBrandE",
+  "className": "BrandE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-pg-bouncer-sample-brand",
+      "modelProjection": "BrandE"
+    }
+  ]
+}

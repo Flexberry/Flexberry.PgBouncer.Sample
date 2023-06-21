@@ -1,0 +1,799 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PgBouncerSample.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.PgBouncerSample.Brand">
+            <summary>
+            Brand.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Brand.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Brand.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Brand.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Brand.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Brand.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.Brand.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Brand.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Brand.Views.BrandE">
+            <summary>
+            "BrandE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Brand.Views.BrandL">
+            <summary>
+            "BrandL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.Brand.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Brand.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.Car">
+            <summary>
+            Car.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.CarNumber">
+            <summary>
+            CarNumber.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.CarBody">
+            <summary>
+            CarBody.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.CarDate">
+            <summary>
+            CarDate.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.Brand">
+            <summary>
+            Car.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.SparePart">
+            <summary>
+            Car.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.Car.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.Views.CarE">
+            <summary>
+            "CarE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.Car.Views.CarL">
+            <summary>
+            "CarL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.Car.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.Car.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.CarType">
+            <summary>
+            Car type.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.ObjectsMarker">
+            <summary>
+            Class for determinate objects assembly in DI.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.ProducingCountry">
+            <summary>
+            Producing country.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.ProducingCountry.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.ProducingCountry.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.ProducingCountry.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.ProducingCountry.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.ProducingCountry.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.ProducingCountry.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.ProducingCountry.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.ProducingCountry.Views.ProducingCountryE">
+            <summary>
+            "ProducingCountryE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.ProducingCountry.Views.ProducingCountryL">
+            <summary>
+            "ProducingCountryL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.ProducingCountry.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.ProducingCountry.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.ReportStatusType">
+            <summary>
+            Report status type.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.SparePart">
+            <summary>
+            Spare part.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.Quantity">
+            <summary>
+            Quantity.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.Used">
+            <summary>
+            Used.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.ProducingCountry">
+            <summary>
+            Spare part.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.Car">
+            <summary>
+            мастеровая ссылка на шапку IIS.PgBouncerSample.Car.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.SparePart.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.SparePart.Views.SparePartE">
+            <summary>
+            "SparePartE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.SparePart.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.SparePart.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.DetailArrayOfSparePart">
+            <summary>
+            Detail array of SparePart.
+            </summary>
+        </member>
+        <member name="M:IIS.PgBouncerSample.DetailArrayOfSparePart.#ctor(IIS.PgBouncerSample.Car)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type SparePart by index.
+            </summary>
+            <summary>
+            Adds object with type SparePart.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.UserReport">
+            <summary>
+            User report.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.UserName">
+            <summary>
+            UserName.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.UserEmail">
+            <summary>
+            UserEmail.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.ReportId">
+            <summary>
+            ReportId.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.ReportTaskStartTime">
+            <summary>
+            ReportTaskStartTime.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.Status">
+            <summary>
+            Status.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.File">
+            <summary>
+            File.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.CreateTime">
+            <summary>
+            Время создания объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.Creator">
+            <summary>
+            Создатель объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.EditTime">
+            <summary>
+            Время последнего редактирования объекта.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.Editor">
+            <summary>
+            Последний редактор объекта.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.UserReport.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.Views.AuditView">
+            <summary>
+            "AuditView" view.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.Views.UserReportE">
+            <summary>
+            "UserReportE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.PgBouncerSample.UserReport.Views.UserReportL">
+            <summary>
+            "UserReportL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.PgBouncerSample.UserReport.AuditSettings">
+            <summary>
+            Audit class settings.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.AuditEnabled">
+            <summary>
+            Включён ли аудит для класса.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.UseDefaultView">
+            <summary>
+            Использовать имя представления для аудита по умолчанию.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.SelectAudit">
+            <summary>
+            Включён ли аудит операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.SelectAuditViewName">
+            <summary>
+            Имя представления для аудирования операции чтения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.InsertAudit">
+            <summary>
+            Включён ли аудит операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.InsertAuditViewName">
+            <summary>
+            Имя представления для аудирования операции создания.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.UpdateAudit">
+            <summary>
+            Включён ли аудит операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.UpdateAuditViewName">
+            <summary>
+            Имя представления для аудирования операции изменения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.DeleteAudit">
+            <summary>
+            Включён ли аудит операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.DeleteAuditViewName">
+            <summary>
+            Имя представления для аудирования операции удаления.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.FormUrl">
+            <summary>
+            Путь к форме просмотра результатов аудита.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.WriteMode">
+            <summary>
+            Режим записи данных аудита (синхронный или асинхронный).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.PrunningLength">
+            <summary>
+            Максимальная длина сохраняемого значения поля (если 0, то строка обрезаться не будет).
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.ShowPrimaryKey">
+            <summary>
+            Показывать ли пользователям в изменениях первичные ключи.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.KeepOldValue">
+            <summary>
+            Сохранять ли старое значение.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.Compress">
+            <summary>
+            Сжимать ли сохраняемые значения.
+            </summary>
+        </member>
+        <member name="F:IIS.PgBouncerSample.UserReport.AuditSettings.KeepAllValues">
+            <summary>
+            Сохранять ли все значения атрибутов, а не только изменяемые.
+            </summary>
+        </member>
+    </members>
+</doc>

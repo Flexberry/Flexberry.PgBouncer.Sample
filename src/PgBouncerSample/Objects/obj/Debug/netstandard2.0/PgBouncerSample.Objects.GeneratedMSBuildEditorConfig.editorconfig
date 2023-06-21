@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = IIS.PgBouncerSample
+build_property.ProjectDir = D:\Home\achibisov\Documents\GitHub\PgBouncerSample\src\PgBouncerSample\Objects\

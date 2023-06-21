@@ -1,0 +1,254 @@
+﻿{
+  "name": "IISPgBouncerSampleCar",
+  "modelName": "i-i-s-pg-bouncer-sample-car",
+  "className": "Car",
+  "nameSpace": "IIS.PgBouncerSample",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "carNumber",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "carBody",
+      "type": "i-i-s-pg-bouncer-sample-car-type",
+      "flexberryType": "CarType",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "carDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "DateTime.Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "createTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "creator",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "editTime",
+      "type": "date",
+      "flexberryType": "AuditNullableDateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "editor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "brand",
+      "relatedTo": "i-i-s-pg-bouncer-sample-brand",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "sparePart",
+      "relatedTo": "i-i-s-pg-bouncer-sample-spare-part",
+      "inverse": "car"
+    }
+  ],
+  "projections": [
+    {
+      "name": "AuditView",
+      "modelName": "i-i-s-pg-bouncer-sample-car",
+      "attrs": [
+        {
+          "name": "carNumber",
+          "caption": "Car number",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "carBody",
+          "caption": "Car body",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "carDate",
+          "caption": "Car date",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Brand",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Brand",
+          "name": "brand",
+          "relatedTo": "i-i-s-pg-bouncer-sample-brand",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "AuditView",
+          "caption": "Spare part",
+          "name": "sparePart",
+          "relatedTo": "i-i-s-pg-bouncer-sample-spare-part",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "CarE",
+      "modelName": "i-i-s-pg-bouncer-sample-car",
+      "attrs": [
+        {
+          "name": "carNumber",
+          "caption": "Car number",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "carBody",
+          "caption": "Car body",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "carDate",
+          "caption": "Car date",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Brand",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Brand",
+          "name": "brand",
+          "relatedTo": "i-i-s-pg-bouncer-sample-brand",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "SparePartE",
+          "caption": "Spare part",
+          "name": "sparePart",
+          "relatedTo": "i-i-s-pg-bouncer-sample-spare-part",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "CarL",
+      "modelName": "i-i-s-pg-bouncer-sample-car",
+      "attrs": [
+        {
+          "name": "carNumber",
+          "caption": "Car number",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "carBody",
+          "caption": "Car body",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "carDate",
+          "caption": "Car date",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Brand",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "brand",
+          "relatedTo": "i-i-s-pg-bouncer-sample-brand",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

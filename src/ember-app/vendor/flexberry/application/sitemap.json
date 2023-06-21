@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "Async open xml reports sample",
+  "applicationTitle": "Async open xml reports sample",
+  "items": [
+    {
+      "link": null,
+      "menuName": "async-open-xml-reports-sample",
+      "caption": "PgBouncerSample",
+      "title": "PgBouncerSample",
+      "children": [
+        {
+          "link": "i-i-s-pg-bouncer-sample-brand-l",
+          "menuName": null,
+          "caption": "Brand",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-pg-bouncer-sample-car-l",
+          "menuName": null,
+          "caption": "Car",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-pg-bouncer-sample-producing-country-l",
+          "menuName": null,
+          "caption": "Producing country",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-pg-bouncer-sample-user-report-l",
+          "menuName": null,
+          "caption": "User report",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-pg-bouncer-sample-brand-e",
+  "editForm": "i-i-s-pg-bouncer-sample-brand-e",
+  "external": false,
+  "caption": "Brand",
+  "name": "IISPgBouncerSampleBrandL",
+  "className": "BrandL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-pg-bouncer-sample-brand",
+      "modelProjection": "BrandL"
+    }
+  ]
+}
