@@ -63,8 +63,8 @@ namespace IIS.PgBouncerSample
         
         private System.Guid fReportId;
         
-        private System.DateTime fReportTaskStartTime = System.DateTime.Parse("DateTime.Now");
-        
+        private System.DateTime fReportTaskStartTime = DateTime.Now;
+
         private IIS.PgBouncerSample.ReportStatusType fStatus;
         
         private ICSSoft.STORMNET.UserDataTypes.WebFile fFile;

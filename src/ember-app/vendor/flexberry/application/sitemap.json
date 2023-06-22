@@ -1,10 +1,10 @@
 ﻿{
-  "applicationCaption": "Async open xml reports sample",
-  "applicationTitle": "Async open xml reports sample",
+  "applicationCaption": "PgBouncer sample",
+  "applicationTitle": "PgBouncer sample",
   "items": [
     {
       "link": null,
-      "menuName": "async-open-xml-reports-sample",
+      "menuName": "pg-bouncer-sample",
       "caption": "PgBouncerSample",
       "title": "PgBouncerSample",
       "children": [

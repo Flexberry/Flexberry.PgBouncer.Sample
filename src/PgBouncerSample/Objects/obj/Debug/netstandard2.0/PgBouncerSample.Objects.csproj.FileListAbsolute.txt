@@ -9,3 +9,14 @@ D:\Home\achibisov\Documents\GitHub\PgBouncerSample\src\PgBouncerSample\Objects\o
 D:\Home\achibisov\Documents\GitHub\PgBouncerSample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.csproj.CoreCompileInputs.cache
 D:\Home\achibisov\Documents\GitHub\PgBouncerSample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.dll
 D:\Home\achibisov\Documents\GitHub\PgBouncerSample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.pdb
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\bin\Debug\netstandard2.0\PgBouncerSample.Objects.xml
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\bin\Debug\netstandard2.0\PgBouncerSample.Objects.deps.json
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\bin\Debug\netstandard2.0\PgBouncerSample.Objects.dll
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\bin\Debug\netstandard2.0\PgBouncerSample.Objects.pdb
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.csproj.AssemblyReference.cache
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.GeneratedMSBuildEditorConfig.editorconfig
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.AssemblyInfoInputs.cache
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.AssemblyInfo.cs
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.csproj.CoreCompileInputs.cache
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.dll
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\Objects\obj\Debug\netstandard2.0\PgBouncerSample.Objects.pdb

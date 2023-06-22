@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NzYXAf40kdbICZrT3ffZeAKFnkz89wNBZ2tjxsYeFQ4IcbINbaDSnar14szK/H59tgHw/k97IFl0YPzB6jFCAQ==",
+  "dgSpecHash": "0AHz+m4zsS+fBvl7p93uzCZ88lGfjjFUe6WsbQP8TfClzhfWmbjPnap1xDGik8+zNdK/T2R4NfVaiTEqmV0vdQ==",
   "success": true,
-  "projectFilePath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj",
+  "projectFilePath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj",
   "expectedPackageFiles": [
     "D:\\Home\\achibisov\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "D:\\Home\\achibisov\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",

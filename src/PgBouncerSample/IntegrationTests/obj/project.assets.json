@@ -8724,11 +8724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\IntegrationTests\\PgBouncerSample.IntegrationTests.csproj",
+      "projectUniqueName": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\IntegrationTests\\PgBouncerSample.IntegrationTests.csproj",
       "projectName": "PgBouncerSample.IntegrationTests",
-      "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\IntegrationTests\\PgBouncerSample.IntegrationTests.csproj",
+      "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\IntegrationTests\\PgBouncerSample.IntegrationTests.csproj",
       "packagesPath": "D:\\Home\\achibisov\\.nuget\\packages\\",
-      "outputPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\IntegrationTests\\obj\\",
+      "outputPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -8751,8 +8751,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj": {
-              "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj"
+            "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj": {
+              "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj"
             }
           }
         }

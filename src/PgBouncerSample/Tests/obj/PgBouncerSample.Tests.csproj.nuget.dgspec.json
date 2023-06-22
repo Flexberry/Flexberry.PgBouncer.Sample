@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj": {}
+    "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj": {
+    "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj",
+        "projectUniqueName": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj",
         "projectName": "PgBouncerSample.Objects",
-        "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj",
+        "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj",
         "packagesPath": "D:\\Home\\achibisov\\.nuget\\packages\\",
-        "outputPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\obj\\",
+        "outputPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -76,14 +76,14 @@
         }
       }
     },
-    "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj": {
+    "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj",
+        "projectUniqueName": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj",
         "projectName": "PgBouncerSample.Tests",
-        "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj",
+        "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Tests\\PgBouncerSample.Tests.csproj",
         "packagesPath": "D:\\Home\\achibisov\\.nuget\\packages\\",
-        "outputPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Tests\\obj\\",
+        "outputPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -106,8 +106,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj": {
-                "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj"
+              "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj": {
+                "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj"
               }
             }
           }

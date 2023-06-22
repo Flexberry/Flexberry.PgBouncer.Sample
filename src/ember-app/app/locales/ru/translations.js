@@ -27,7 +27,7 @@ $.extend(true, translations, {
     'i-i-s-pg-bouncer-sample-user-report': IISPgBouncerSampleUserReportModel
   },
 
-  'application-name': 'Async open xml reports sample',
+  'application-name': 'PgBouncer sample',
 
   forms: {
     loading: {
@@ -66,7 +66,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': 'Async open xml reports sample',
+        'application-name': 'PgBouncer sample',
         'application-version': {
           caption: 'Версия аддона {{version}}',
           title: 'Это версия аддона ember-flexberry, которая сейчас используется в этом тестовом приложении ' +
@@ -77,8 +77,8 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: 'Async open xml reports sample',
-          title: 'Async open xml reports sample'
+          caption: 'PgBouncer sample',
+          title: 'PgBouncer sample'
         },
         'application-version': {
           caption: 'Версия аддона {{version}}',
@@ -90,7 +90,7 @@ $.extend(true, translations, {
           caption: 'Главная',
           title: ''
         },
-        'async-open-xml-reports-sample': {
+        'pg-bouncer-sample': {
           caption: 'PgBouncerSample',
           title: 'PgBouncerSample',
           'i-i-s-pg-bouncer-sample-brand-l': {

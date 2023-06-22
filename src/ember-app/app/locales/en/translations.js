@@ -27,7 +27,7 @@ $.extend(true, translations, {
     'i-i-s-pg-bouncer-sample-user-report': IISPgBouncerSampleUserReportModel
   },
 
-  'application-name': 'Async open xml reports sample',
+  'application-name': 'PgBouncer sample',
 
   forms: {
     loading: {
@@ -66,7 +66,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': 'Async open xml reports sample',
+        'application-name': 'PgBouncer sample',
         'application-version': {
           caption: 'Addon version {{version}}',
           title: 'It is version of ember-flexberry addon, which uses in this dummy application ' +
@@ -77,8 +77,8 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: 'Async open xml reports sample',
-          title: 'Async open xml reports sample'
+          caption: 'PgBouncer sample',
+          title: 'PgBouncer sample'
         },
         'application-version': {
           caption: 'Addon version {{version}}',
@@ -90,7 +90,7 @@ $.extend(true, translations, {
           caption: 'Home',
           title: ''
         },
-        'async-open-xml-reports-sample': {
+        'pg-bouncer-sample': {
           caption: 'PgBouncerSample',
           title: 'PgBouncerSample',
           'i-i-s-pg-bouncer-sample-brand-l': {

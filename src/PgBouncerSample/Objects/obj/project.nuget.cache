@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UcwNORscZuOJ5v2mXxWzP4+IBBgJFmSdy08X35MZnpU75qtdFMlpRTXSDuAZYbt9f0eNUVc6hgcDPz1pYy1xPQ==",
+  "dgSpecHash": "hrHFEK6L/lirj/CL+s3wPpHmgbuUcORtDzliTjbntJ0aKAYq/Aosh3akVcnsHpcbe+SvZsPwukeKjAaM118NPQ==",
   "success": true,
-  "projectFilePath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj",
+  "projectFilePath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj",
   "expectedPackageFiles": [
     "D:\\Home\\achibisov\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",
     "D:\\Home\\achibisov\\.nuget\\packages\\microsoft.codeanalysis.fxcopanalyzers\\3.3.0\\microsoft.codeanalysis.fxcopanalyzers.3.3.0.nupkg.sha512",

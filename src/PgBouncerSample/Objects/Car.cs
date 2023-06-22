@@ -60,7 +60,7 @@ namespace IIS.PgBouncerSample
         
         private IIS.PgBouncerSample.CarType fCarBody;
         
-        private System.DateTime fCarDate = System.DateTime.Parse("DateTime.Now");
+        private System.DateTime fCarDate = DateTime.Now;
         
         private System.Nullable<System.DateTime> fCreateTime;
         

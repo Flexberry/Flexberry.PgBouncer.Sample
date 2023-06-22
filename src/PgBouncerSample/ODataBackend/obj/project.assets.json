@@ -7616,11 +7616,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\ODataBackend\\PgBouncerSample.ODataBackend.csproj",
+      "projectUniqueName": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\ODataBackend\\PgBouncerSample.ODataBackend.csproj",
       "projectName": "PgBouncerSample.ODataBackend",
-      "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\ODataBackend\\PgBouncerSample.ODataBackend.csproj",
+      "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\ODataBackend\\PgBouncerSample.ODataBackend.csproj",
       "packagesPath": "D:\\Home\\achibisov\\.nuget\\packages\\",
-      "outputPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\ODataBackend\\obj\\",
+      "outputPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\ODataBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7643,8 +7643,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj": {
-              "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj"
+            "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj": {
+              "projectPath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\Objects\\PgBouncerSample.Objects.csproj"
             }
           }
         }

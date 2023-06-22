@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sg96zEVvUZWr1QLlmB2PMAwPOS1NFdj6Gicz2r7uI9ULAHpsUIu9QVvDMAg7Cj4SKX6JDrLI+4tRa30c7+jZSw==",
+  "dgSpecHash": "tOX/et5xCtyvg8z2mo3navXWHbmtY4prJ/zEeK1He4LnUZ0MrqbzR8CUGZvnnTtfi0xkRHj4mEXQvrmesU+vpg==",
   "success": true,
-  "projectFilePath": "D:\\Home\\achibisov\\Documents\\GitHub\\PgBouncerSample\\src\\PgBouncerSample\\ODataBackend\\PgBouncerSample.ODataBackend.csproj",
+  "projectFilePath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\ODataBackend\\PgBouncerSample.ODataBackend.csproj",
   "expectedPackageFiles": [
     "D:\\Home\\achibisov\\.nuget\\packages\\aspnetcore.healthchecks.npgsql\\6.0.2\\aspnetcore.healthchecks.npgsql.6.0.2.nupkg.sha512",
     "D:\\Home\\achibisov\\.nuget\\packages\\log4net\\2.0.15\\log4net.2.0.15.nupkg.sha512",
