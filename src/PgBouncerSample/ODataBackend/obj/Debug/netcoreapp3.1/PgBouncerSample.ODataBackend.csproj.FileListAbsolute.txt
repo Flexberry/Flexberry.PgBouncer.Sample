@@ -186,3 +186,6 @@ D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSampl
 D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\ODataBackend\obj\Debug\netcoreapp3.1\PgBouncerSample.ODataBackend.dll
 D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\ODataBackend\obj\Debug\netcoreapp3.1\PgBouncerSample.ODataBackend.pdb
 D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\ODataBackend\obj\Debug\netcoreapp3.1\PgBouncerSample.ODataBackend.genruntimeconfig.cache
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\ODataBackend\bin\Debug\netcoreapp3.1\NewPlatform.Flexberry.Security.BusinessServers.dll
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\ODataBackend\bin\Debug\netcoreapp3.1\NewPlatform.Flexberry.Security.Objects.dll
+D:\Home\achibisov\Documents\GitHub\Flexberry.PgBouncer.Sample\src\PgBouncerSample\ODataBackend\bin\Debug\netcoreapp3.1\NewPlatform.Flexberry.Security.dll

@@ -162,6 +162,10 @@
               "target": "Package",
               "version": "[7.1.1, )"
             },
+            "NewPlatform.Flexberry.Security": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "NewPlatform.Flexberry.StyleCopRuleset": {
               "target": "Package",
               "version": "[1.0.0, )"

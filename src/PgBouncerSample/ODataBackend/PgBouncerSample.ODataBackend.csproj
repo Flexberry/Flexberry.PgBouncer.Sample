@@ -17,6 +17,7 @@
     <PackageReference Include="NewPlatform.Flexberry.AuditBigData" Version="1.0.0-rc04" />
     <PackageReference Include="NewPlatform.Flexberry.AuditBigData.Serialization.Json" Version="1.0.0-rc04" />
     <PackageReference Include="NewPlatform.Flexberry.Caching" Version="2.0.0" />
+    <PackageReference Include="NewPlatform.Flexberry.Security" Version="3.0.0" />
     <PackageReference Include="NewPlatform.Flexberry.StyleCopRuleset" Version="1.0.0"></PackageReference>
     <PackageReference Include="NewPlatform.Flexberry.ORM.ODataService" Version="7.1.1"></PackageReference>
     <PackageReference Include="NewPlatform.Flexberry.LockService" Version="3.0.0"></PackageReference>

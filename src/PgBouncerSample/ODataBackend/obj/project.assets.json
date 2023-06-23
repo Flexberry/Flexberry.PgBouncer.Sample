@@ -767,6 +767,35 @@
           }
         }
       },
+      "NewPlatform.Flexberry.Security/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NewPlatform.Flexberry.Caching": "2.0.0",
+          "NewPlatform.Flexberry.ORM": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NewPlatform.Flexberry.Security.BusinessServers.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard2.0/NewPlatform.Flexberry.Security.Objects.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard2.0/NewPlatform.Flexberry.Security.dll": {
+            "related": ".BusinessServers.xml;.Objects.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NewPlatform.Flexberry.Security.BusinessServers.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard2.0/NewPlatform.Flexberry.Security.Objects.dll": {
+            "related": ".xml"
+          },
+          "lib/netstandard2.0/NewPlatform.Flexberry.Security.dll": {
+            "related": ".BusinessServers.xml;.Objects.xml;.xml"
+          }
+        }
+      },
       "NewPlatform.Flexberry.StyleCopRuleset/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -3725,6 +3754,33 @@
         "lib/netstandard2.0/ICSSoft.STORMNET.Business.PostgresDataService.dll",
         "newplatform.flexberry.orm.postgresdataservice.7.1.1.nupkg.sha512",
         "newplatform.flexberry.orm.postgresdataservice.nuspec"
+      ]
+    },
+    "NewPlatform.Flexberry.Security/3.0.0": {
+      "sha512": "6IdHMkLCisQV2zXUlNCdfAxX0udOjgXMvX5SbGOGKmE22WXK7ex3xj45Wc+/GRmyZ2q3Xx8iL2h41BLJKcQHhw==",
+      "type": "package",
+      "path": "newplatform.flexberry.security/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/app.config.install.xdt",
+        "content/web.config.install.xdt",
+        "lib/net45/NewPlatform.Flexberry.Security.AspNetProviders.dll",
+        "lib/net45/NewPlatform.Flexberry.Security.AspNetProviders.xml",
+        "lib/net45/NewPlatform.Flexberry.Security.BusinessServers.dll",
+        "lib/net45/NewPlatform.Flexberry.Security.BusinessServers.xml",
+        "lib/net45/NewPlatform.Flexberry.Security.Objects.dll",
+        "lib/net45/NewPlatform.Flexberry.Security.Objects.xml",
+        "lib/net45/NewPlatform.Flexberry.Security.dll",
+        "lib/net45/NewPlatform.Flexberry.Security.xml",
+        "lib/netstandard2.0/NewPlatform.Flexberry.Security.BusinessServers.dll",
+        "lib/netstandard2.0/NewPlatform.Flexberry.Security.BusinessServers.xml",
+        "lib/netstandard2.0/NewPlatform.Flexberry.Security.Objects.dll",
+        "lib/netstandard2.0/NewPlatform.Flexberry.Security.Objects.xml",
+        "lib/netstandard2.0/NewPlatform.Flexberry.Security.dll",
+        "lib/netstandard2.0/NewPlatform.Flexberry.Security.xml",
+        "newplatform.flexberry.security.3.0.0.nupkg.sha512",
+        "newplatform.flexberry.security.nuspec"
       ]
     },
     "NewPlatform.Flexberry.StyleCopRuleset/1.0.0": {
@@ -7603,6 +7659,7 @@
       "NewPlatform.Flexberry.LogService.Objects >= 4.0.0",
       "NewPlatform.Flexberry.ORM.ODataService >= 7.1.1",
       "NewPlatform.Flexberry.ORM.PostgresDataService >= 7.1.1",
+      "NewPlatform.Flexberry.Security >= 3.0.0",
       "NewPlatform.Flexberry.StyleCopRuleset >= 1.0.0",
       "NewPlatform.Flexberry.UserSettingsService >= 4.0.0",
       "PgBouncerSample.Objects >= 1.0.0",
@@ -7698,6 +7755,10 @@
           "NewPlatform.Flexberry.ORM.PostgresDataService": {
             "target": "Package",
             "version": "[7.1.1, )"
+          },
+          "NewPlatform.Flexberry.Security": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           },
           "NewPlatform.Flexberry.StyleCopRuleset": {
             "target": "Package",

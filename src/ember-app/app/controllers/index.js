@@ -16,31 +16,37 @@ export default Controller.extend({
         }, {
           link: null,
           icon: 'list',
-          caption: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.caption'),
-          title: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.title'),
+          caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.caption'),
+          title: i18n.t('forms.application.sitemap.pg-bouncer-sample.title'),
           children: [{
             link: 'i-i-s-pg-bouncer-sample-brand-l',
-            caption: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.i-i-s-pg-bouncer-sample-brand-l.caption'),
-            title: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.i-i-s-pg-bouncer-sample-brand-l.title'),
-            icon: 'tags',
+            caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-brand-l.caption'),
+            title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-brand-l.title'),
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-pg-bouncer-sample-car-l',
-            caption: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.i-i-s-pg-bouncer-sample-car-l.caption'),
-            title: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.i-i-s-pg-bouncer-sample-car-l.title'),
-            icon: 'tasks',
+            caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-car-l.caption'),
+            title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-car-l.title'),
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-pg-bouncer-sample-producing-country-l',
-            caption: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.i-i-s-pg-bouncer-sample-producing-country-l.caption'),
-            title: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.i-i-s-pg-bouncer-sample-producing-country-l.title'),
-            icon: 'chart line',
+            caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-producing-country-l.caption'),
+            title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-producing-country-l.title'),
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-pg-bouncer-sample-user-report-l',
-            caption: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.i-i-s-pg-bouncer-sample-user-report-l.caption'),
-            title: i18n.t('forms.application.sitemap.async-open-xml-reports-sample.i-i-s-pg-bouncer-sample-user-report-l.title'),
-            icon: 'list',
+            caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-user-report-l.caption'),
+            title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-user-report-l.title'),
+            icon: 'chart line',
+            children: null
+          }, {
+            link: 'i-c-s-soft-s-t-o-r-m-n-e-t-security-user-l',
+            caption: 'User sec',
+            title: 'User sec',
+            icon: 'tasks',
             children: null
           }]
         }

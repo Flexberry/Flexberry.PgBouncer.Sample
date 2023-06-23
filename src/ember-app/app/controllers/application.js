@@ -28,25 +28,25 @@ export default Controller.extend({
             link: 'i-i-s-pg-bouncer-sample-brand-l',
             caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-brand-l.caption'),
             title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-brand-l.title'),
-            icon: 'tags',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-pg-bouncer-sample-car-l',
             caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-car-l.caption'),
             title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-car-l.title'),
-            icon: 'tasks',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-pg-bouncer-sample-producing-country-l',
             caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-producing-country-l.caption'),
             title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-producing-country-l.title'),
-            icon: 'chart line',
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-pg-bouncer-sample-user-report-l',
             caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-user-report-l.caption'),
             title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-user-report-l.title'),
-            icon: 'list',
+            icon: 'chart line',
             children: null
           }]
         }

@@ -14,6 +14,7 @@
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using NewPlatform.Flexberry;
     using NewPlatform.Flexberry.AuditBigData;
     using NewPlatform.Flexberry.AuditBigData.Serialization;
     using NewPlatform.Flexberry.Caching;
@@ -22,6 +23,7 @@
     using NewPlatform.Flexberry.ORM.ODataService.Model;
     using NewPlatform.Flexberry.ORM.ODataService.WebApi.Extensions;
     using NewPlatform.Flexberry.ORM.ODataServiceCore.Common.Exceptions;
+    using NewPlatform.Flexberry.Security;
     using NewPlatform.Flexberry.Services;
     using Unity;
 
@@ -107,6 +109,8 @@
                     typeof(ObjectsMarker).Assembly,
                     typeof(ApplicationLog).Assembly,
                     typeof(UserSetting).Assembly,
+                    typeof(Agent).Assembly,
+                    typeof(FlexberryUserSetting).Assembly,
                     typeof(Lock).Assembly,
                 };
                 var modelBuilder = new DefaultDataObjectEdmModelBuilder(assemblies, true);
@@ -171,7 +175,7 @@
         {
             string connStr = Configuration["DefConnStr"];
             string auditStr = Configuration["AuditConnStr"];
-            string securityStr = Configuration["SecurityConnString"];
+            string securityConnectionString = Configuration["SecurityConnString"];
 
             if (string.IsNullOrEmpty(connStr))
             {
@@ -184,19 +188,37 @@
 
             container.RegisterType<ICacheService, MemoryCacheService>();
 
-            // Регистрируем SecurityManager
-            container.RegisterSingleton<ISecurityManager, EmptySecurityManager>();
-            IDataService securityDataService = new PostgresDataService(container.Resolve<ISecurityManager>()) { CustomizationString = securityStr };
-            container.RegisterInstance("securityDataService", securityDataService, InstanceLifetime.Singleton);
+            // Регистрируем SecurityManager. Общий на все датасервисы, будет разрешаться автоматически.
+            ISecurityManager emptySecurityManager = new EmptySecurityManager();
+            IDataService securityDataService = new PostgresDataService(emptySecurityManager)
+            {
+                CustomizationString = securityConnectionString
+            };
 
-            // Основнов DS
-            container.RegisterSingleton<IDataService, PostgresDataService>(
-                Inject.Property(nameof(PostgresDataService.CustomizationString), connStr));
+            ISecurityManager securityManager = new SecurityManager(securityDataService, container.Resolve<ICacheService>(), true);
+
+            container.RegisterInstance<ISecurityManager>(securityManager, InstanceLifetime.Singleton);
+
+            // IAgentManager
+            var agentManager = new AgentManager(securityDataService, container.Resolve<ICacheService>());
+            container.RegisterInstance<IAgentManager>(agentManager, InstanceLifetime.Singleton);
+            container.RegisterType<IPasswordHasher, EmptyPasswordHasher>();
+
+            // Регистрируем основной DataService.
+            IDataService mainDataService = new PostgresDataService(securityManager)
+            {
+                CustomizationString = connStr
+            };
+
+            container.RegisterInstance<IDataService>(mainDataService, InstanceLifetime.Singleton);
 
             // DS аудита
-            container.RegisterSingleton<IDataService, PostgresDataService>(
-                "auditDataService",
-                Inject.Property(nameof(PostgresDataService.CustomizationString), auditStr));
+            IDataService auditDataService = new PostgresDataService(emptySecurityManager)
+            {
+                CustomizationString = auditStr
+            };
+
+            container.RegisterInstance<IDataService>("auditDataService", auditDataService, InstanceLifetime.Singleton);
 
             // Инициализируем сервис аудита.
             var auditAppSetting = new AuditAppSetting

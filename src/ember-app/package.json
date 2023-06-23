@@ -19,7 +19,7 @@
   "devDependencies": {
     "autoprefixer": "^6",
     "broccoli-asset-rev": "^2.4.5",
-    "dexie": "^2.0.2",
+    "dexie": "2.0.2",
     "ember-ajax": "^3.0.0",
     "ember-block-slots": "1.1.11",
     "ember-browserify": "1.1.9",
@@ -41,11 +41,13 @@
     "ember-data": "~3.1.1",
     "ember-export-application-global": "^2.0.0",
     "ember-flexberry": "3.7.0-beta.5",
+    "ember-flexberry-data": "^3.8.0",
+    "ember-flexberry-security": "3.6.1-beta.2",
     "ember-flexberry-themes": "^0.1.0-beta.32",
     "ember-link-action": "0.0.36",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
-    "ember-moment": "7.7.0",
+    "ember-moment": "7.6.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~3.1.0",
     "ember-test-selectors": "2.1.0",
@@ -54,7 +56,7 @@
     "flatpickr": "4.6.1",
     "inflection": "^1.12.0",
     "loader.js": "^4.2.3",
-    "node-uuid": "^1.4.7"
+    "node-uuid": "1.4.7"
   },
   "resolutions": {
     "ember-get-config": "0.3.0"

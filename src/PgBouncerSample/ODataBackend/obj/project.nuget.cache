@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tOX/et5xCtyvg8z2mo3navXWHbmtY4prJ/zEeK1He4LnUZ0MrqbzR8CUGZvnnTtfi0xkRHj4mEXQvrmesU+vpg==",
+  "dgSpecHash": "RSaQBX+uZNYzyqjS6Ct9/xKG4f4UlRh311utVfbiioou4OPBBfSFoT+cJIm4/zkJu6RrIo0ut3vt499SqCw9Ig==",
   "success": true,
   "projectFilePath": "D:\\Home\\achibisov\\Documents\\GitHub\\Flexberry.PgBouncer.Sample\\src\\PgBouncerSample\\ODataBackend\\PgBouncerSample.ODataBackend.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "D:\\Home\\achibisov\\.nuget\\packages\\newplatform.flexberry.orm\\7.1.1\\newplatform.flexberry.orm.7.1.1.nupkg.sha512",
     "D:\\Home\\achibisov\\.nuget\\packages\\newplatform.flexberry.orm.odataservice\\7.1.1\\newplatform.flexberry.orm.odataservice.7.1.1.nupkg.sha512",
     "D:\\Home\\achibisov\\.nuget\\packages\\newplatform.flexberry.orm.postgresdataservice\\7.1.1\\newplatform.flexberry.orm.postgresdataservice.7.1.1.nupkg.sha512",
+    "D:\\Home\\achibisov\\.nuget\\packages\\newplatform.flexberry.security\\3.0.0\\newplatform.flexberry.security.3.0.0.nupkg.sha512",
     "D:\\Home\\achibisov\\.nuget\\packages\\newplatform.flexberry.stylecopruleset\\1.0.0\\newplatform.flexberry.stylecopruleset.1.0.0.nupkg.sha512",
     "D:\\Home\\achibisov\\.nuget\\packages\\newplatform.flexberry.usersettingsservice\\4.0.0\\newplatform.flexberry.usersettingsservice.4.0.0.nupkg.sha512",
     "D:\\Home\\achibisov\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

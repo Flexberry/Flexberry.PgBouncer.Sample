@@ -1,6 +1,5 @@
 FROM flexberry/alt.p8-postgresql
 
-# COPY PostgreSqlSecurity.create.sql /docker/
 COPY PostgreSql.Security.create.sql /docker/
 COPY PostgreSql.Security.insert.sql /docker/
 
