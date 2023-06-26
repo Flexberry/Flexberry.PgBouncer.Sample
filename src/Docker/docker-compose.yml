@@ -3,16 +3,16 @@
 services:
   app:
     image: pgbouncersample/app
-    links:
-      - app-postgres-db:app-postgres-db
     ports:
       - 80:80
     environment:
       - UploadUrl=Uploads
       - BackendRoot=https://localhost
-      - DefConnStr=SERVER=app-postgres-db;User ID=flexberryuser;Password=jhv;Port=5432;database=appdb;
-      - AuditConnStr=SERVER=app-postgres-db;User ID=flexberryuser;Password=jhv;Port=5432;database=auditdb;
-      - SecurityConnString=SERVER=app-postgres-db;User ID=flexberryuser;Password=jhv;Port=5432;database=securitydb;
+      - DefConnStr=SERVER=app-postgres-db;User ID=flexberryuser;Password=jhv;Port=6432;database=appdb;
+      - AuditConnStr=SERVER=app-postgres-db;User ID=flexberryuser;Password=jhv;Port=6432;database=auditdb;
+      - SecurityConnString=SERVER=app-postgres-db;User ID=flexberryuser;Password=jhv;Port=6432;database=securitydb;
+    networks:
+      - pgbouncersample
 
   app-postgres-db:
     image: pgbouncersample/postgre-sql
@@ -20,5 +20,20 @@ services:
       - DB:/var/lib/pgsql/data/
     ports:
       - 5432:5432
+    networks:
+      - pgbouncersample
+
+  pgbouncer:
+    image: pgbouncersample/pgbouncer
+    depends_on:
+      - app-postgres-db
+    ports:
+      - 6432:6432
+    networks:
+      - pgbouncersample
+
 volumes:
   DB:
+
+networks:
+  pgbouncersample:

@@ -26,8 +26,8 @@ WORKDIR /PgBouncerSample
 
 RUN \
  dotnet restore PgBouncerSample.sln;\
- dotnet build PgBouncerSample.sln -c Release;\
- dotnet publish ODataBackend/PgBouncerSample.ODataBackend.csproj -c Release -o out -f netcoreapp3.1
+ dotnet build PgBouncerSample.sln -c Debug;\
+ dotnet publish ODataBackend/PgBouncerSample.ODataBackend.csproj -c Debug -o out -f netcoreapp3.1
 
 FROM mcr.microsoft.com/dotnet/aspnet:3.1
 
