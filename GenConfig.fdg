@@ -47,7 +47,7 @@
       "PostgreSql": {
         "DiffSql": true,
         "FullSql": true,
-        "LiquibaseSql": false,
+        "LiquibaseSql": true,
         "Security": true,
         "AdminUser": true,
         "ConnectionString": null

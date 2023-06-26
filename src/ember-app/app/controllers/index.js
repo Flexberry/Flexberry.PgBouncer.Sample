@@ -22,13 +22,13 @@ export default Controller.extend({
             link: 'i-i-s-pg-bouncer-sample-brand-l',
             caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-brand-l.caption'),
             title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-brand-l.title'),
-            icon: 'chart bar',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-pg-bouncer-sample-car-l',
             caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-car-l.caption'),
             title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-car-l.title'),
-            icon: 'paperclip',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-pg-bouncer-sample-producing-country-l',
@@ -40,12 +40,6 @@ export default Controller.extend({
             link: 'i-i-s-pg-bouncer-sample-user-report-l',
             caption: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-user-report-l.caption'),
             title: i18n.t('forms.application.sitemap.pg-bouncer-sample.i-i-s-pg-bouncer-sample-user-report-l.title'),
-            icon: 'chart line',
-            children: null
-          }, {
-            link: 'i-c-s-soft-s-t-o-r-m-n-e-t-security-user-l',
-            caption: 'User sec',
-            title: 'User sec',
             icon: 'tasks',
             children: null
           }]
