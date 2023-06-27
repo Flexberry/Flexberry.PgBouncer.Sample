@@ -8,9 +8,6 @@ services:
     environment:
       - UploadUrl=Uploads
       - BackendRoot=https://localhost
-      - DefConnStr=SERVER=pgbouncer;User ID=flexberryuser;Password=jhv;Port=6432;database=appdb;
-      - AuditConnStr=SERVER=pgbouncer;User ID=flexberryuser;Password=jhv;Port=6432;database=auditdb;
-      - SecurityConnString=SERVER=pgbouncer;User ID=flexberryuser;Password=jhv;Port=6432;database=securitydb;
     networks:
       - pgbouncersample
 

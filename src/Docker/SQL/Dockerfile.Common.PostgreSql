@@ -2,47 +2,27 @@ FROM flexberry/alt.p8-postgresql
 
 COPY PostgreSql.Security.create.sql /docker/
 COPY PostgreSql.Security.insert.sql /docker/
-
-RUN \
-  /docker-cmd.sh& \
-  cd /docker/; \
-  echo  "\
-CREATE DATABASE securitydb;\
-CREATE USER flexberryuser WITH password 'jhv';\
-GRANT ALL privileges ON DATABASE securitydb TO flexberryuser;\
-" > create.sql;  \
-  until psql -U postgres <create.sql; do echo "Wait...";sleep 2; done ; \ 
-  until psql -U flexberryuser -d securitydb <PostgreSql.Security.create.sql; do echo 'Wait...';sleep 2; done ;\
-  until psql -U flexberryuser -d securitydb <PostgreSql.Security.insert.sql; do echo 'Wait...';sleep 2; done ;\
-#   /etc/init.d/postgresql stop;  \
-  while su -c psql postgres </dev/null >/dev/null 2>&1; do sleep 1; done; echo "postgresql stopped"
-
 COPY PostgreSqlAudit.create.sql /docker/
-
-RUN \
-  /docker-cmd.sh& \
-  cd /docker/; \
-  echo  "\
-CREATE DATABASE auditdb;\
-CREATE USER flexberryuser WITH password 'jhv';\
-GRANT ALL privileges ON DATABASE auditdb TO flexberryuser;\
-" > create.sql;  \
-  until psql -U postgres <create.sql; do echo "Wait...";sleep 2; done ; \ 
-  until psql -U flexberryuser -d auditdb <PostgreSqlAudit.create.sql; do echo 'Wait...';sleep 2; done ;\
-#   /etc/init.d/postgresql stop;  \
-  while su -c psql postgres </dev/null >/dev/null 2>&1; do sleep 1; done; echo "postgresql stopped"
-
 COPY PostgreSql.create.sql /docker/
 
 RUN \
   /docker-cmd.sh& \
   cd /docker/; \
   echo  "\
-CREATE DATABASE appdb;\
+#flexberryuser
 CREATE USER flexberryuser WITH password 'jhv';\
+#securitydb
+CREATE DATABASE securitydb;\
+GRANT ALL privileges ON DATABASE securitydb TO flexberryuser;\
+#auditdb
+CREATE DATABASE auditdb;\
+GRANT ALL privileges ON DATABASE auditdb TO flexberryuser;\
+#appdb
+CREATE DATABASE appdb;\
 GRANT ALL privileges ON DATABASE appdb TO flexberryuser;\
 " > create.sql;  \
-  until psql -U postgres <create.sql; do echo "Wait...";sleep 2; done ; \ 
-  until psql -U flexberryuser -d appdb <PostgreSql.create.sql; do echo 'Wait...';sleep 2; done ;\
-#   /etc/init.d/postgresql stop;  \
-  while su -c psql postgres </dev/null >/dev/null 2>&1; do sleep 1; done; echo "postgresql stopped"
+  until psql -U postgres <create.sql; do echo 'Wait...';sleep 2; done ; \ 
+  until psql -U flexberryuser -d securitydb <PostgreSql.Security.create.sql; do echo 'Wait...';sleep 2; done ;\
+  until psql -U flexberryuser -d securitydb <PostgreSql.Security.insert.sql; do echo 'Wait...';sleep 2; done ; \
+  until psql -U flexberryuser -d auditdb <PostgreSqlAudit.create.sql; do echo 'Wait...';sleep 2; done ; \
+  until psql -U flexberryuser -d appdb <PostgreSql.create.sql; do echo 'Wait...';sleep 2; done ;
