@@ -4,5 +4,5 @@
 **/.vs/
 **/Uploads
 *.coverage
-*.xml
 *.user
+src/node_modules
