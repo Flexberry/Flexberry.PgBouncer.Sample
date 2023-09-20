@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-pg-bouncer-sample-car-e",
+  "editForm": "i-i-s-pg-bouncer-sample-car-e",
+  "external": false,
+  "caption": "Car",
+  "name": "IISPgBouncerSampleCarL",
+  "className": "CarL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-pg-bouncer-sample-car",
+      "modelProjection": "CarL"
+    }
+  ]
+}

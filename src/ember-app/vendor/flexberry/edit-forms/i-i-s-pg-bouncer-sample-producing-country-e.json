@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Producing country",
+  "name": "IISPgBouncerSampleProducingCountryE",
+  "className": "ProducingCountryE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-pg-bouncer-sample-producing-country",
+      "modelProjection": "ProducingCountryE"
+    }
+  ]
+}

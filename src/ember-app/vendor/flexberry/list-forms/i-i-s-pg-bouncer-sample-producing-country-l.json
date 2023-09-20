@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-pg-bouncer-sample-producing-country-e",
+  "editForm": "i-i-s-pg-bouncer-sample-producing-country-e",
+  "external": false,
+  "caption": "Producing country",
+  "name": "IISPgBouncerSampleProducingCountryL",
+  "className": "ProducingCountryL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-pg-bouncer-sample-producing-country",
+      "modelProjection": "ProducingCountryL"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+﻿version: '3'
+
+services:
+  app:
+    image: pgbouncersample/app
+    ports:
+      - 80:80
+    environment:
+      - UploadUrl=Uploads
+      - BackendRoot=https://localhost
+    networks:
+      - pgbouncersample
+
+  app-postgres-db:
+    image: pgbouncersample/postgre-sql
+    volumes:
+      - DB:/var/lib/pgsql/data/
+    ports:
+      - 5432:5432
+    networks:
+      - pgbouncersample
+
+  pgbouncer:
+    image: pgbouncersample/pgbouncer
+    depends_on:
+      - app-postgres-db
+    ports:
+      - 6432:6432
+    networks:
+      - pgbouncersample
+
+volumes:
+  DB:
+
+networks:
+  pgbouncersample:

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "User report",
+  "name": "IISPgBouncerSampleUserReportE",
+  "className": "UserReportE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-pg-bouncer-sample-user-report",
+      "modelProjection": "UserReportE"
+    }
+  ]
+}

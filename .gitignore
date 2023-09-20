@@ -1,0 +1,8 @@
+**/packages/
+**/bin/
+**/obj/
+**/.vs/
+**/Uploads
+*.coverage
+*.user
+src/node_modules
