@@ -10,18 +10,25 @@ RUN \
   cd /docker/; \
   echo  "\
 #flexberryuser
-CREATE USER flexberryuser WITH password 'jhv';\
+  CREATE USER flexberryuser WITH password 'jhv';\
+  CREATE USER securityuser WITH password '123';\
+  CREATE USER audituser WITH password '123';\
+  CREATE USER appuser WITH password '123';\
+  #todo: securityuser + audituser + appuser -> grant permissions on tables
 #securitydb
 CREATE DATABASE securitydb;\
 GRANT ALL privileges ON DATABASE securitydb TO flexberryuser;\
+  GRANT ALL privileges ON DATABASE securitydb TO securityuser;\
 #auditdb
 CREATE DATABASE auditdb;\
 GRANT ALL privileges ON DATABASE auditdb TO flexberryuser;\
+  GRANT ALL privileges ON DATABASE auditdb TO audituser;\
 #appdb
 CREATE DATABASE appdb;\
 GRANT ALL privileges ON DATABASE appdb TO flexberryuser;\
+  GRANT ALL privileges ON DATABASE appdb TO appuser;\
 " > create.sql;  \
-  until psql -U postgres <create.sql; do echo 'Wait...';sleep 2; done ; \ 
+  until psql -U postgres <create.sql; do echo 'Wait...';sleep 2; done ; \
   until psql -U flexberryuser -d securitydb <PostgreSql.Security.create.sql; do echo 'Wait...';sleep 2; done ;\
   until psql -U flexberryuser -d securitydb <PostgreSql.Security.insert.sql; do echo 'Wait...';sleep 2; done ; \
   until psql -U flexberryuser -d auditdb <PostgreSqlAudit.create.sql; do echo 'Wait...';sleep 2; done ; \
