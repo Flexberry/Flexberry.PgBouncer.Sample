@@ -1,1 +1,1 @@
-"flexberryuser" "jhv"
+"pgbounceruser" "12345"
