@@ -1,16 +1,8 @@
 FROM flexberry/alt.p8-postgresql
 
-COPY PostgreSql.Security.create.sql /docker/
-COPY PostgreSql.Security.insert.sql /docker/
-COPY PostgreSql.Audit.create.sql /docker/
-COPY PostgreSql.create.sql /docker/
 COPY PostgreSql.users.sql /docker/
 
 RUN \
   /docker-cmd.sh& \
   cd /docker/; \
-  until psql -U postgres <PostgreSql.users.sql; do echo 'Wait...';sleep 2; done ; \
-  until psql -U flexberryuser -d securitydb <PostgreSql.Security.create.sql; do echo 'Wait...';sleep 2; done ;\
-  until psql -U flexberryuser -d securitydb <PostgreSql.Security.insert.sql; do echo 'Wait...';sleep 2; done ; \
-  until psql -U flexberryuser -d auditdb <PostgreSql.Audit.create.sql; do echo 'Wait...';sleep 2; done ; \
-  until psql -U flexberryuser -d appdb <PostgreSql.create.sql; do echo 'Wait...';sleep 2; done ;
+  until psql -U postgres <PostgreSql.users.sql; do echo 'Wait...';sleep 2; done ;

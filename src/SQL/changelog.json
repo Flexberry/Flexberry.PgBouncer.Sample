@@ -1,0 +1,22 @@
+{
+  "databaseChangeLog": [
+    {
+      "includeAll": {
+        "path": "appdb",
+        "contextFilter": "appdb"
+      }
+    },
+    {
+      "includeAll": {
+        "path": "auditdb",
+        "contextFilter": "auditdb"
+      }
+    },
+    {
+      "includeAll": {
+        "path": "securitydb",
+        "contextFilter": "securitydb"
+      }
+    }
+  ]
+}

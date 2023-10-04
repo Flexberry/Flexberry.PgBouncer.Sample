@@ -1,9 +1,0 @@
-{
-  "databaseChangeLog": [
-    {
-      "includeAll": {
-        "path": "data"
-      }
-    }
-  ]
-}

@@ -1,11 +1,11 @@
-FROM liquibase/liquibase:4.9
+FROM liquibase/liquibase:4.11
 
 USER root
 
 RUN apt-get update && apt-get install -y curl postgresql-client-11
 
 COPY /src/Docker/readycheck /usr/bin
-COPY /src/SQL/PostgreSqlLiquibase /liquibase/appsql
+COPY /src/SQL /liquibase/sql
 COPY /src/Docker/docker-liquibase-entrypoint.sh /liquibase/entrypoint/docker-liquibase-entrypoint.sh
 
 ENTRYPOINT ["/liquibase/entrypoint/docker-liquibase-entrypoint.sh"]

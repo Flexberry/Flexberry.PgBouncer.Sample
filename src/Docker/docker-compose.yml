@@ -24,16 +24,16 @@ services:
     image: pgbouncersample/liquibase
     tty: true
     environment:
-      - READYCHECK_URLS=http://app app-postgres-db:5432 остальные базы
-      - READYCHECK_TIMEOUT=1
+      - READYCHECK_URLS=http://app app-postgres-db:5432
+      - READYCHECK_TIMEOUT=3
       - POSTGRES_USER=flexberryuser
       - POSTGRES_PASSWORD=jhv
       - POSTGRES_HOST=app-postgres-db
       - POSTGRES_PORT=5432
-      - POSTGRES_DB=appdb
+      - POSTGRES_DB=appdb auditdb securitydb
       - SCHEMANAME=liquibase
     volumes:
-      - script:/liquibase/appsql/data
+      - script:/liquibase/sql
     depends_on:
       - app-postgres-db
       - app
