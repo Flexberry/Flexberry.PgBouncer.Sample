@@ -4,4 +4,4 @@ docker build --no-cache -f dockerfiles/Dockerfile.Liquibase -t pgbouncersample/l
 
 docker build --no-cache -f dockerfiles/Dockerfile.PgBouncer  -t pgbouncersample/pgbouncer ../..
 
-docker build --no-cache -f dockerfiles/Dockerfile.PostgreSql -t pgbouncersample/postgre-sql ../SQL
+docker build --no-cache -f dockerfiles/Dockerfile.PostgreSql -t pgbouncersample/postgresql ../SQL
