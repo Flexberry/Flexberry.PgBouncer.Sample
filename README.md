@@ -35,7 +35,7 @@ PgBouncer выполняет "трансляцию" запросов в нужн
 ## Описание Liquibase
 [Liquibase](https://flexberry.github.io/ru/gbt_liquibase.html) - это инструмент для отслеживания, управления и применения изменений схемы базы данных. Является аналогом Git для баз данных.
 
-Liquibase используется в данном проекте для автоматической инициализации и обновления структуры БД. Инициализация и обновление БД происходит при запуске контейнера `pgbouncersample/liquibase` (см. [docker-liquibase-entrypoint.sh](src/Docker/startup-scripts/docker-liquibase-entrypoint.sh)). Перед запуском `liquibase` ожидается запуск контейнера с PostgreSQL через скрипт [readycheck](src/Docker/startup-scripts/readycheck).
+Liquibase используется в данном проекте для автоматической инициализации и обновления структуры БД. Инициализация и обновление БД происходит при запуске контейнера `pgbouncersample/liquibase` (см. [docker-liquibase-entrypoint.sh](src/Docker/startup-scripts/docker-liquibase-entrypoint.sh)). Перед запуском `liquibase` ожидается запуск контейнера с PostgreSQL через скрипт [readycheck](src/Docker/startup-scripts/readycheck) (см. [описание](https://github.com/Flexberry/dockerfiles/tree/master/readycheck#readme)).
 
 ### Описание структуры SQL скриптов
 Чтобы применить скрипты на нескольких БД, каждой папке присвоен одноимённый контекст: `appdb`, `auditdb`, `securitydb`. Название контекста соответствует базе данных, на которой применяются скрипты (подробнее см. в этом [разделе](https://flexberry.github.io/ru/gbt_liquibase.html#%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2-%D0%B2-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%B8%D1%85-%D0%B1%D0%B4)).
