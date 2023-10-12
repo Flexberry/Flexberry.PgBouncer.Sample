@@ -4,21 +4,21 @@
 
 ## Структура
 Приложение состоит из:
-- PgBouncer - сервис, обеспечивающий `connection pooling`
-- Liquibase - утилита для автоматической инициализации и обновления БД
+- [PgBouncer](https://www.pgbouncer.org) - сервис, обеспечивающий `connection pooling`
+- [Liquibase](https://flexberry.github.io/ru/gbt_liquibase.html) - утилита для автоматической инициализации и обновления БД
 - PostgreSQL:
   - appdb - БД приложения
   - auditdb - БД аудита
   - securitydb - БД полномочий
-- Frontend (ember-flexberry)
-- Backend (Flexberry ODataBackend)
+- Frontend ([ember-flexberry](https://github.com/Flexberry/ember-flexberry))
+- Backend ([Flexberry ODataService](https://flexberry.github.io/ru/fo_orm-odata-service.html))
 
 ![Структурная схема](./img/структурная%20схема.png)
 
 ## Запуск
 Компоненты приложения упакованы в Docker:
-1. Запустите сборку образов: `create-image.cmd` в папке `/src/Docker`.
-2. Запустите контейнеры: `start.cmd` в папке `/src/Docker`.
+1. Запустить сборку образов, выполнив скрипт `create-image.cmd` в папке `/src/Docker`.
+2. Запустить контейнеры, выполнив скрипт `start.cmd` в папке `/src/Docker`.
 
 Исходные файлы образов находятся в папке `/src/Docker/dockerfiles`.
 
