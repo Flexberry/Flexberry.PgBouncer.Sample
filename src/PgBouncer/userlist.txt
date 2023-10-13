@@ -1,1 +1,4 @@
-"pgbounceruser" "12345"
+"pgbadmin" "@dm1n"
+"securityuser" "123"
+"audituser" "123"
+"appuser" "123"

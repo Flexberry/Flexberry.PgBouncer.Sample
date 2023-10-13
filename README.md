@@ -26,7 +26,7 @@
 PgBouncer - это инструмент, который работает как посредник между приложением и базой данных, осуществляя при этом `connection pooling`. PgBouncer принимает подключения, и "транслирует" их в нужные базы данных, при этом используя соединения из своего пула. Прикладное приложение подключается к `PgBouncer` (порт `6432` по умолчанию).
 
 ### Подключение к PgBouncer
-Для подключения к PgBouncer используется пользователь `pgbounceruser`, пароль `12345` (`SERVER=pgbouncer;User ID=pgbounceruser;Password=12345;Port=6432;Database=appdb`). Данный пользователь задаётся в файле `userlist.txt` и используется только для подключения к PgBouncer.
+Для подключения к PgBouncer используется пользователь `pgbadmin`, пароль `12345` (`SERVER=pgbouncer;User ID=pgbadmin;Password=12345;Port=6432;Database=appdb`). Данный пользователь задаётся в файле `userlist.txt` и используется только для подключения к PgBouncer.
 
 > Путь к файлу `userlist.txt` можно изменить через параметр `pgbouncer.auth_file`.
 
