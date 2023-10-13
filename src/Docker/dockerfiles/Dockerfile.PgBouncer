@@ -1,0 +1,7 @@
+FROM edoburu/pgbouncer
+
+COPY /src/PgBouncer/pgbouncer.ini /etc/pgbouncer/pgbouncer.ini
+COPY /src/PgBouncer/userlist.txt /etc/pgbouncer/userlist.txt
+COPY /src/Docker/startup-scripts/readycheck /usr/bin/
+
+CMD readycheck && pgbouncer /etc/pgbouncer/pgbouncer.ini

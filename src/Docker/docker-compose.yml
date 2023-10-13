@@ -8,15 +8,34 @@ services:
     environment:
       - UploadUrl=Uploads
       - BackendRoot=https://localhost
+      - READYCHECK_URLS=app-postgres-db:5432
     networks:
       - pgbouncersample
 
   app-postgres-db:
-    image: pgbouncersample/postgre-sql
+    image: pgbouncersample/postgresql
     volumes:
       - DB:/var/lib/pgsql/data/
     ports:
       - 5432:5432
+    networks:
+      - pgbouncersample
+
+  liquibase:
+    image: pgbouncersample/liquibase
+    tty: true
+    environment:
+      - POSTGRES_USER=flexberryuser
+      - POSTGRES_PASSWORD=jhv
+      - POSTGRES_HOST=app-postgres-db
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=appdb auditdb securitydb
+      - SCHEMANAME=liquibase
+      - READYCHECK_URLS=app-postgres-db:5432
+    volumes:
+      - script:/liquibase/sql
+    depends_on:
+      - app-postgres-db
     networks:
       - pgbouncersample
 
@@ -28,9 +47,12 @@ services:
       - 6432:6432
     networks:
       - pgbouncersample
+    environment:
+      - READYCHECK_URLS=app-postgres-db:5432
 
 volumes:
   DB:
+  script:
 
 networks:
   pgbouncersample:

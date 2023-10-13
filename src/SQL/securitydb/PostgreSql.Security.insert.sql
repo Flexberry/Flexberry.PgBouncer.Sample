@@ -1,3 +1,6 @@
+--liquibase formatted sql
+--changeset flexberryuser:2023-10-03-13:00-security-2
+
 -- Roles
 INSERT INTO public.stormag(primarykey, name, isuser, isgroup, isrole, enabled)
 VALUES ('b02d3e4a-ce84-40d7-8d27-b5d85f543a84', 'AllAccess', false, false, true, true);

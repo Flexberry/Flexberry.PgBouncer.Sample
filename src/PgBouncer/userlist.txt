@@ -1,1 +1,4 @@
-"flexberryuser" "jhv"
+"pgbadmin" "@dm1n"
+"securityuser" "123"
+"audituser" "123"
+"appuser" "123"

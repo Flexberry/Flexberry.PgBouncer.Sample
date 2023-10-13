@@ -35,9 +35,10 @@ WORKDIR /app
 
 COPY --from=backend /PgBouncerSample/out ./
 COPY --from=ember_app /ember-app/dist ./wwwroot/
+COPY /src/Docker/startup-scripts/readycheck /usr/bin/
 
 # Check webapi responses
 HEALTHCHECK --interval=60s --timeout=15s --start-period=20s \
   CMD curl -f "http://0.0.0.0/health" || exit
 
-ENTRYPOINT ["dotnet", "PgBouncerSample.ODataBackend.dll"]
+ENTRYPOINT readycheck && dotnet PgBouncerSample.ODataBackend.dll

@@ -6,6 +6,7 @@
       "applicationUrl": "http://localhost:6500",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT": "1",
         "BackendRoot": "http://localhost",
         "DefConnStr": ""
       }

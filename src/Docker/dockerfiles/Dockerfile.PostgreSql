@@ -1,0 +1,8 @@
+FROM flexberry/alt.p8-postgresql
+
+COPY PostgreSql.users.sql /docker/
+
+RUN \
+  /docker-cmd.sh& \
+  cd /docker/; \
+  until psql -U postgres <PostgreSql.users.sql; do echo 'Wait...';sleep 2; done ;
